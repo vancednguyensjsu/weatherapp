@@ -19,7 +19,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    station.collectData();
+                    System.out.println("Collected Data: " + station.collectData());
                     break;
                 case 2:
                     station.displayAllData();

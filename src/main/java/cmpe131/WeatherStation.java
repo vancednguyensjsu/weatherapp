@@ -2,7 +2,6 @@ package cmpe131;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class WeatherStation {
     private List<WeatherData> dataRecords;
@@ -11,14 +10,14 @@ public class WeatherStation {
         dataRecords = new ArrayList<>();
     }
 
-    public void collectData() {
+    public WeatherData collectData() {
         double temperature = 73; // Simulated temperature between 15-30°C
         double humidity = 25; // Simulated humidity between 30-80%
         double wind = 9; // Simulated pressure between 950-1000 hPa
 
         WeatherData data = new WeatherData(temperature, humidity, wind);
         dataRecords.add(data);
-        System.out.println("Collected Data: " + data);
+        return data;
     }
 
     public void displayAllData() {
