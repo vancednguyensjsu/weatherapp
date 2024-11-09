@@ -11,7 +11,7 @@ public class WeatherStation {
     }
 
     public WeatherData collectData() {
-        double temperature = 76; // Simulated temperature between 15-30°C
+        double temperature = 73; // Simulated temperature between 15-30°C
         double humidity = 25; // Simulated humidity between 30-80%
         double wind = 9; // Simulated pressure between 950-1000 hPa
 
